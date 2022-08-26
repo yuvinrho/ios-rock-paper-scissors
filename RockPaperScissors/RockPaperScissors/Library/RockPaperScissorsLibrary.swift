@@ -11,7 +11,7 @@ class RockPaperScissorsLibrary {
         return Int(userInput)
     }
     
-    private func judgeValidInput(userEnter: Int?) -> RockPaperScissorCase? {
+    private func validInput(userEnter: Int?) -> RockPaperScissorCase? {
         switch userEnter {
         case 0:
             return .end
