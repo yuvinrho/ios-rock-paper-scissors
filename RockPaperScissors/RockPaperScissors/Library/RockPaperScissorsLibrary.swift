@@ -52,11 +52,7 @@ class RockPaperScissorsLibrary {
         switch bothHands {
         case let (userHand, computerHand) where userHand == computerHand:
             return .draw
-        case (.scissor, .paper):
-            return .win
-        case (.rock, .scissor):
-            return .win
-        case (.paper, .rock):
+        case (.scissor, .paper), (.rock, .scissor), (.paper, .rock):
             return .win
         default:
             return .lose
